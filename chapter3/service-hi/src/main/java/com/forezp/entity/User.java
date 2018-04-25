@@ -5,6 +5,7 @@ import java.io.Serializable;
 public class User implements Serializable {
     private String name;
     private Integer userId;
+    private String port;
 
     public User() {
     }
@@ -21,6 +22,21 @@ public class User implements Serializable {
 
         this.name = name;
         this.userId = userId;
+    }
+
+    public String getPort() {
+        return port;
+    }
+
+    public void setPort(String port) {
+        this.port = port;
+    }
+
+    public User(String name, Integer userId, String port) {
+
+        this.name = name;
+        this.userId = userId;
+        this.port = port;
     }
 
     public String getName() {

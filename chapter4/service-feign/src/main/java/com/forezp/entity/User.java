@@ -6,7 +6,24 @@ public class User implements Serializable {
     private String name;
     private Integer userId;
 
+    private String port;
+
     public User() {
+    }
+
+    public String getPort() {
+        return port;
+    }
+
+    public void setPort(String port) {
+        this.port = port;
+    }
+
+    public User(String name, Integer userId, String port) {
+
+        this.name = name;
+        this.userId = userId;
+        this.port = port;
     }
 
     public Integer getUserId() {
